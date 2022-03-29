@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="/css/index.css">
+    
+</head>
+<header id="headerdex">
+    <img src="/images/kindpng_1081861.png" style="width: 200px;"alt="">  
+</header>
+<body>
+    
+    <div id="container">
+        <img src="/images/logo.png" style="width: 300px;" alt="">
+        <div id="searchAndButton">
+        <!-- input name -->
+            <input id="pokeName" type="text" placeholder="Pokemon name">
+            <!-- buttons -->
+            <div>
+                <button id ="ButtonSearch" onclick="fetchPokemon()"><img src="/images/PikPng.com_lupa-png_1512785.png" alt=""></button>
+            </div>
+        </div>
+        <!-- images -->
+        <div id="image-container">
+            <img id = "pokeImage" src="/images/pokeball-people-pokemon-nintendo-video-game-gaming-gartoon-ball-512.webp" alt="Pokemon">
+        </div>
+        <div>
+            <label for="">N° :</label>
+            <label id = "pokeId" for="">0</label>
+        </div>
+        <div>
+            <label for="">Name :</label>
+            <label id = "pokeNameid" for="">0</label>
+        </div>
+        <h1>Types</h1>
+        <div id="pokeType">
+            <div class="poketypecontainer">
+                <div class="poketypelabel">.......</div>
+            </div>
+            <div class="poketypecontainer">
+                <div class="poketypelabel">.......</div>
+            </div>
+
+          
+            
+
+        </div>
+        
+        <h1>Shiny form</h1>
+        <div id="evolutions">
+            <div id="shinyContent"><img id = "pokeImageBack" src="/images/pokeball-people-pokemon-nintendo-video-game-gaming-gartoon-ball-512.webp" alt="Pokemon"></div>
+        </div>
+        <h1>Stats</h1>
+        <div id="pokeStats">
+            <div class ="statCont">
+                <div id="statname">hp: </div>
+                <div id ="statamount">0 </div>
+            </div>
+            <div class ="statCont">
+                <div id="statname">attack: </div>
+                <div id ="statamount">0</div>
+            </div>
+            <div class ="statCont">
+                <div id="statname">defense: </div>
+                <div id ="statamount">0</div>
+            </div>
+            <div class ="statCont">
+                <div id="statname">special-attack: </div>
+                <div id ="statamount">0</div>
+            </div>
+            <div class ="statCont">
+                <div id="statname">special-defense: </div>
+                <div id ="statamount">0</div>
+            </div>
+            <div class ="statCont">
+                <div id="statname">speed: </div>
+                <div id ="statamount">0</div>
+            </div>
+        </div>
+        <h1>Moves</h1>
+        <div id ="pokeMoves">
+            <div class="divMove">
+                <span class="parpadea text"><strong>waiting...</strong>
+                <div class="Move"></div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+<footer id = "footerdex">
+    <div><h1>LaunchX</h1></div>
+    <div>©IkerIsmak</div>
+</footer>
+<script src="/poke.js"></script>
+</html>
